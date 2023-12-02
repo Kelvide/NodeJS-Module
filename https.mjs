@@ -10,3 +10,6 @@ function makeRequest(url, data) {
 
 const responseData = makeRequest('https://google.com', "hello")
 console.log(responseData)
+
+// This is a global object in Node JS to check the cached modules 
+console.log(require.cache)
