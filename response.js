@@ -2,6 +2,6 @@ function decrypt(data) {
     return "decryted data"
 }
 
-export default function read() {
+module.exports = function read() {
     return decrypt()
 }

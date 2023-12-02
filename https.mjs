@@ -1,7 +1,7 @@
 // Creating an HTTPS module
 // url the destination and send is the data to send to the destination
-import { send } from './request.mjs';
-import read from './response.mjs';
+const { send } = require('./request');
+const read = require('./response');
 
 function makeRequest(url, data) {
     send(url, data)
