@@ -1,11 +1,11 @@
 // Creating an HTTPS module
 // url the destination and send is the data to send to the destination
-const request = require('./request')
-const response = require('./response')
+const read = require('./response')
+const { send } = require('./request')
 
-function makeRequest(url, send) {
-    request.send(url, send)
-    return response.read();
+function makeRequest(url, data) {
+    send(url, data)
+    return read();
 }
 
 const responseData = makeRequest('https://google.com', "hello")
